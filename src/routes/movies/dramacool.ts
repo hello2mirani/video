@@ -8,7 +8,7 @@ const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   fastify.get('/', (_, rp) => {
     rp.status(200).send({
       intro:
-        "Welcome to the dramacool provider: check out the provider's website @ https://dramacool.com.pa/",
+        "Welcome to the dramacool provider: check out the provider's website @ https://dramacool.pa/",
       routes: ['/:query', '/info', '/watch', '/popular','/recent-movies', '/recent-shows'],
       documentation: 'https://docs.consumet.org/#tag/dramacool',
     });
